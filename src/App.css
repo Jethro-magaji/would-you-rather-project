@@ -1,0 +1,121 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.user-login{
+  display: flex;
+  flex-direction: column;
+}
+
+.login-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 10px 20px;
+}
+
+.nav-items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 10px 20px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  padding: 10px 12px;
+  background: rgb(254, 255, 243);
+  align-items: center;
+}
+
+.card:hover {
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  background: rgb(247, 241, 191);
+}
+
+.user-name{
+  background-color: rgb(247, 241, 191);
+}
+.input-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 10px 20px;
+}
+
+.author-image{
+  width: 20%;
+  height: 30%;
+  /* border-radius: 80%; */
+}
+
+.leaderboard__user__image{
+  width: 15%;
+  height: 15%;
+}
+
+.options-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  gap: 10px 20px;
+  margin:0 auto;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+.select-option-form{
+  display: flex;
+  flex-direction: row;
+}
