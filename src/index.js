@@ -1,25 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { persistStore } from "redux-persist";
-import { PersistGate } from "redux-persist/integration/react";
 import "./index.css";
 import App from "./App";
 import { Provider } from "react-redux";
-import store from "./store/index";
-import { getAllUsers } from "./store/reducers";
+import { createStore } from "redux";
+import reducers from "./reducers/Index";
+import thunk from "redux-thunk";
+import { applyMiddleware } from "redux";
+import { logger } from "./middleware/Logger";
 
-let persistor = persistStore(store);
-
-//dispatches the initial action to get all users
-store.dispatch(getAllUsers());
-
+const store = createStore(reducers, applyMiddleware(thunk, logger));
 ReactDOM.render(
-  <React.StrictMode>
-    <Provider store={store}>
-      <PersistGate persistor={persistor}>
-        <App />
-      </PersistGate>
-    </Provider>
-  </React.StrictMode>,
+  <Provider store={store}>
+    <App />
+  </Provider>,
   document.getElementById("root")
 );

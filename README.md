@@ -29,4 +29,5 @@ This project was initialized using the [Create React App](https://github.com/fac
 - [React](https://reactjs.org/)
 - [React Router](https://reacttraining.com/react-router/web/guides/quick-start)
 - [React Redux](https://redux.js.org/)
-- [redux toolKit](https://redux-toolkit.js.org/)
+- [Redux toolKit](https://redux-toolkit.js.org/)
+- [React Bootstrap]()
